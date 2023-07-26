@@ -1,37 +1,28 @@
-<!DOCTYPE html>
-<head>
-  <title>Register Form</title>
-  <link rel="stylesheet" type="text/css" href="../../styles.css">
-
-<body>
-
 <div class="box">
 
 
   <h1>Please, register here</h1>
 
-  <form name="RegistrationForm" action="../../register.php" method="POST">
+  <form name="RegistrationForm" class="forms" action="../../register.php" method="POST">
 
     <p>Username</p>
-    <input type="text" name="username" placeholder="Enter username" required="">
+    <input type="text" name="username" class="forms" placeholder="Enter username" required="">
 
     <p>Email</p>
-    <input type="Email" name="email" placeholder="Enter your email" required="">
+    <input type="Email" name="email" class="forms" placeholder="Enter your email" required="">
 
     <p>Password</p>
-    <input type="password" name="password1" placeholder="Enter password" required="">
+    <input type="password" name="password1" class="forms" placeholder="Enter password" required="">
 
     <p>Retype Password</p>
-    <input type="password" name="password2" placeholder="Re-enter password" required="">
+    <input type="password" name="password2" class="forms" placeholder="Re-enter password" required="">
 
     <input type="submit" name="" value="Register">
 
     <br><br>
-    <a href="../app.component.html">Login page</a>
+    <a href="/login">Login page</a>
+    <router-outlet></router-outlet>
   </form>
 
 </div>
 
-</body>
-</head>
-</html>
